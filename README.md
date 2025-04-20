@@ -38,7 +38,7 @@ A Logistic Regression model is trained using the preprocessed data. The model is
 The model is trained using the `LogisticRegression` class from `sklearn`, with the solver set to `'liblinear'`. 
 
 The bar plot below visualizes the weights (coefficients) assigned by the logistic regression model to each feature, indicating their influence on the prediction.
-![Model weights](model_weights.png)
+<img src="model_weights.png" style="width:80%;">
 
 ## Evaluating the Model and Making Predictions 📈
 Once the model is trained, we evaluate its performance on the validation and test datasets. The accuracy is calculated for each set, and the confusion matrix helps to understand the classification performance (i.e., the number of true positives, false positives, true negatives, and false negatives).
