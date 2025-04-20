@@ -35,10 +35,15 @@ After this, we split the dataset into training, validation, and test sets. This 
 ## Training a Logistic Regression Model 🎓
 A Logistic Regression model is trained using the preprocessed data. The model is trained to predict the probability of rain the next day based on the weather features.
 
-The model is trained using the `LogisticRegression` class from `sklearn`, with the solver set to `'liblinear'`. We evaluate the model's performance by using accuracy, confusion matrices and comparing it to a random model.
+The model is trained using the `LogisticRegression` class from `sklearn`, with the solver set to `'liblinear'`. 
+
+The bar plot below visualizes the weights (coefficients) assigned by the logistic regression model to each feature, indicating their influence on the prediction.
+![Model weights](model_weights.png)
 
 ## Evaluating the Model and Making Predictions 📈
 Once the model is trained, we evaluate its performance on the validation and test datasets. The accuracy is calculated for each set, and the confusion matrix helps to understand the classification performance (i.e., the number of true positives, false positives, true negatives, and false negatives).
+
+![Test Confusion Matrix](test_confusion_matrix.png)
 
 The accuracy of the model is approximately 68.58%. The model shows consistent performance across the training, validation, and test datasets, indicating that it is not overfitting and generalizes well to unseen data. It also outperforms a random model (50%) as well as a naive model that always predicts "No" (i.e., no rain tomorrow) (53%).
 
