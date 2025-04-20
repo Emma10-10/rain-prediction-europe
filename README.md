@@ -51,3 +51,15 @@ The accuracy of the model is approximately 67.78%. The model shows consistent pe
 ## Saving the Trained Model 💾
 After training the model, we save it to a file using `joblib`. This allows the model to be reused later without the need to retrain it, enabling faster predictions on new data.
 
+## 🚀 How to Run
+
+You have two options to run this project:
+
+1. **Run the full notebook**:  
+   - Download the dataset from [Kaggle](https://www.kaggle.com/datasets/orvile/european-cities-weather-prediction-dataset/data).  
+   - Place the dataset in a data folder inside the project folder.  
+   - Open `european_weather_analysis.ipynb` and run all cells step-by-step to see data processing, model training, and evaluation in action.  
+
+2. **Use the pre-trained model**:  
+   - Simply load the provided trained model file `europe_rain.joblib` and start making predictions without running the full notebook.
+
