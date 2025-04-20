@@ -25,6 +25,8 @@ To address this, the DataFrame is reshaped into a long format, where each row re
 Here's a visual representation of the distribution of various weather variables in relation to whether it rained the next day:
 ![Weather Distribution](weather_distribution.png)
 
+From these histograms, we can start to observe relationships between certain weather variables and the likelihood of rain the next day. For instance, higher atmospheric pressure appears to be associated with a lower chance of rain tomorrow, while lower pressure often coincides with rainy conditions. Additionally, the summer months show a greater tendency for rain, suggesting seasonal patterns in precipitation. Interestingly, higher maximum temperatures also seem to increase the probability of rain the following day.
+
 ## Preprocessing 🧹
 Before training the model, we preprocess the data by handling missing values, encoding categorical variables (like `MONTH`), and scaling numerical features. We use the `SimpleImputer` from `sklearn` to fill in missing values and the `OneHotEncoder` to convert categorical features into numerical ones.
 
