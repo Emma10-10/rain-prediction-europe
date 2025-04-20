@@ -22,6 +22,9 @@ To address this, the DataFrame is reshaped into a long format, where each row re
 - The weather variables (`cloud_cover`, `humidity`, `pressure`, `global_radiation`, `precipitation`, `sunshine`, `temp_mean`, `temp_min`, `temp_max`) are standardized into their own columns.
 - The original `DATE` and `MONTH` columns are retained, and the new `LOCATION` column is placed just after `MONTH`.
 
+Here's a visual representation of the distribution of various weather variables in relation to whether it rained the next day:
+<img src="weather_distribution.png" width="800">
+
 ## Preprocessing 🧹
 Before training the model, we preprocess the data by handling missing values, encoding categorical variables (like `MONTH`), and scaling numerical features. We use the `SimpleImputer` from `sklearn` to fill in missing values and the `OneHotEncoder` to convert categorical features into numerical ones.
 
