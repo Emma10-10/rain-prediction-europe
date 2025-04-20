@@ -46,7 +46,7 @@ Once the model is trained, we evaluate its performance on the validation and tes
 
 ![Test Confusion Matrix](test_confusion_matrix.png)
 
-The accuracy of the model is approximately 68.58%. The model shows consistent performance across the training, validation, and test datasets, indicating that it is not overfitting and generalizes well to unseen data. It also outperforms a random model (50%) as well as a naive model that always predicts "No" (i.e., no rain tomorrow) (53%).
+The accuracy of the model is approximately 67.78%. The model shows consistent performance across the training, validation, and test datasets, indicating that it is not overfitting and generalizes well to unseen data. It also outperforms a random model (50%) as well as a naive model that always predicts "No" (i.e., no rain tomorrow) (53%).
 
 ## Saving the Trained Model 💾
 After training the model, we save it to a file using `joblib`. This allows the model to be reused later without the need to retrain it, enabling faster predictions on new data.
